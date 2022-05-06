@@ -1,20 +1,10 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         AO3
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  This script adds fandom search in the history tab.
+// @author       Nichole Zacherl
 // @match        https://archiveofourown.org/*
-// @grant        none
-// ==/UserScript==
-
-// ==UserScript==
-// @name         New Userscript
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
-// @match        https://archiveofourown.org/users/DevilsPetVolpe/bookmarks*
 // @grant        none
 // ==/UserScript==
 
