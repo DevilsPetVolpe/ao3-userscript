@@ -1,0 +1,38 @@
+package com.techelevator;
+
+import java.util.Scanner;
+
+public class TempConvert {
+
+    public static void main(String[] args) {
+        Scanner someValue = new Scanner(System.in);
+
+        System.out.println("Please enter in the temperature:"); //prompt the use to enter a temp
+        String userTempInputString = someValue.nextLine();
+        double degree = Double.parseDouble(userTempInputString);
+
+        //id temp as (C)elsius, or (F)ahrenheit
+        System.out.println("Is this temperature in: 'C' for celsius, or 'F' for fahrenheit"); //prompt user
+        String userDegreeType = someValue.nextLine(); //user return
+//		String[] celsOrFahr = userDegreeType.split( " "); //I don't think i need this
+//		char celsOrFahr = Character.parseChar (tempArray);
+
+
+        // declare doubles and sets values
+        double temperatureFarenheit = 0;
+        double temperatureCelsius = 0;
+
+		 temperatureFarenheit = degree * 1.8 + 32;
+		 temperatureCelsius = (degree - 32) / 1.8;
+
+        if (userDegreeType == "C") {            //issue is down here 
+            return  temperatureFarenheit;       //return gives me a squiggly
+        } else if (userDegreeType == "F") {
+            return new temperatureCelsius;      // adding new did not help 
+        }
+        return;
+		
+		
+    }
+
+}
